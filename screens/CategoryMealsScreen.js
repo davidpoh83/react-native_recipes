@@ -1,15 +1,21 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
 const CategoryMealsScreen = props => { 
     return (
         <View style={styles.screen}>
             <Text>The Category Meal Screen!</Text>
+            <Button title='Go to Meal Details screen' onPress={() => {
+                props.navigation.navigate('MealDetail')
+            }} />
+            <Button title='Go Back' onPress={() => {
+                props.navigation.pop();
+            }}/>
         </View>
     );
 };
 
-const styles = StyleSheet.CategoryMealsScreen({
+const styles = StyleSheet.create({
     screen: {
         flex: 1,
         justifyContent: 'center',
@@ -17,4 +23,4 @@ const styles = StyleSheet.CategoryMealsScreen({
     }
 });
 
-export default CategoriesScreen;
+export default CategoryMealsScreen;

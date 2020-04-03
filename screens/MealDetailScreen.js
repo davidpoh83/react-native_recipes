@@ -1,15 +1,18 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
-const MealDetailScreen = props => { 
+const MealDetailScreen = props => {
     return (
         <View style={styles.screen}>
             <Text>The Meal Detail Screen!</Text>
+            <Button title='Go back Home Screen' onPress={() => {
+                props.navigation.popToTop()
+            }} />
         </View>
     );
 };
 
-const styles = StyleSheet.MealDetailScreen({
+const styles = StyleSheet.create({
     screen: {
         flex: 1,
         justifyContent: 'center',
@@ -17,4 +20,4 @@ const styles = StyleSheet.MealDetailScreen({
     }
 });
 
-export default CategoriesScreen;
+export default MealDetailScreen;

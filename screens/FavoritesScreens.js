@@ -9,7 +9,7 @@ const FavoritesScreen = props => {
     );
 };
 
-const styles = StyleSheet.FavoritesScreen({
+const styles = StyleSheet.create({
     screen: {
         flex: 1,
         justifyContent: 'center',
@@ -17,4 +17,4 @@ const styles = StyleSheet.FavoritesScreen({
     }
 });
 
-export default CategoriesScreen;
+export default FavoritesScreen;
