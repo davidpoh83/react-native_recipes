@@ -40,7 +40,8 @@ const styles = StyleSheet.create({
         alignItems: 'flex-end'
     },
     title: {
-        fontFamily: 'open-sans-bold',
+        // fontFamily: 'open-sans-bold',
+        // fontFamily: 'sans-serif',
         fontSize: 22,
         textAlign: 'right'
     }
